@@ -12,6 +12,10 @@
   const increment = () => {
     count.push(1);
   };
+
+  $inspect(count).with((type, values) => {
+    console.log(type, values);
+  });
 </script>
 
 <button onclick={increment}>Count</button>
