@@ -3,7 +3,8 @@ const pages = {
   hello: 'hello.html',
   counter: 'counter.html',
   sayhello: 'sayhello.html',
-  global_counter: 'global-counter.html'
+  global_counter: 'global-counter.html',
+  auto_counter: 'auto-counter.html'
 }
 
 
