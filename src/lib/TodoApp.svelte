@@ -1,7 +1,7 @@
 <script>
   import Todo from "./Todo.svelte";
 
-  const data = [
+  const data = $state([
     {
       id: 1,
       name: "Yapping",
@@ -21,9 +21,14 @@
       id: 4,
       name: "Belajar aja",
     },
-  ];
+  ]);
+
+  function todoRemove() {
+    data.shift();
+  }
 </script>
 
+<button onclick={todoRemove}>Remove</button>
 <ul>
   {#each data as todo}
     <li><Todo {...todo} /></li>
