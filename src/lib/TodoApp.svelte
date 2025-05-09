@@ -30,7 +30,7 @@
 
 <button onclick={todoRemove}>Remove</button>
 <ul>
-  {#each data as todo}
+  {#each data as todo (todo.id)}
     <li><Todo {...todo} /></li>
   {/each}
 </ul>
