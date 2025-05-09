@@ -20,6 +20,7 @@
     {
       id: 4,
       name: "Belajar aja",
+      done: false,
     },
   ]);
 
