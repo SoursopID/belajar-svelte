@@ -1,4 +1,6 @@
 <script>
+  import NavLink from "./NavLink.svelte";
+
   let person = $state.raw({
     firstName: "",
     lastName: "",
@@ -12,6 +14,7 @@
   }
 </script>
 
+<NavLink />
 <div>
   <input type="text" id="firstName" placeholder="First Name" value="" />
   <input type="text" id="lastName" placeholder="Last Name" value="" />

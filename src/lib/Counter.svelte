@@ -1,4 +1,6 @@
 <script>
+  import NavLink from "./NavLink.svelte";
+
   let count = $state([]);
   // let total = $derived(count.reduce((a, b) => a + b, 0));
   let total = $derived.by(() => {
