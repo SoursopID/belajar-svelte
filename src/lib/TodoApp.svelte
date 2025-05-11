@@ -35,7 +35,7 @@
   }
 </script>
 
-<form action="">
+<form action="" onsubmit={todoAdd}>
   <input type="text" id="todo" />
   <button type="button" onclick={todoAdd}>Add</button>
 </form>
